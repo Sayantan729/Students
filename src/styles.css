@@ -1,1 +1,373 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+body {
+  background-color: rgb(33, 33, 33);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+.input-group {
+  margin-bottom: 20px;
+}
+.input {
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  margin: 10px;
+  margin-left: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input:disabled
+{
+  background-color: white;
+}
+.error-input {
+  border: 5px solid #d50000;
+}
+.error-text {
+  padding: 1%;
+  font-weight: bolder;
+  color: #d50000;
+}
+.button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 5px 20px;
+  margin: 8px;
+}
+.submit-button {
+  background-color: rgb(0, 123, 255);
+  color: white;
+}
+.submit-button:disabled {
+  background-color: rgba(0, 123, 255, 0.486);
+  color: rgba(255, 255, 255, 0.486);
+}
+.reset-button {
+  background-color: rgb(220, 53, 69);
+  color: white;
+}
+.records {
+  width: 75%;
+  margin: auto;
+  padding: 70px;
+  padding-top: 30px;
+  border-left: 2px solid#4db6ac;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.record-row-outer
+{
+  margin: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  box-shadow: 0px 20px 30px black;
+}
+
+
+
+
+
+.record-row {
+  padding: 20px;
+  border-radius: 20px;
+  
+  
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  
+}
+
+
+
+.record-row-inner
+{
+  display: flex;
+}
+
+ .drawer
+{
+ display: flex;
+ justify-content: space-evenly;
+ border-top: 1px solid currentColor;
+ border-radius:0px 0px 20px 20px;
+ padding: 15px;
+ -webkit-border-radius:0px 0px 20px 20px;
+ -moz-border-radius:0px 0px 20px 20px;
+ -ms-border-radius:0px 0px 20px 20px;
+ -o-border-radius:0px 0px 20px 20px;
+ 
+} 
+
+.drawer-button
+{
+  
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+
+.drawer-button:hover
+{
+  background-color: rgba(0, 0, 0, 0.171);
+  color: white;
+
+}
+
+
+.cse {
+  background-color: #388e3c;
+  color: #fff;
+}
+
+.ece {
+  background-color: #ffd600;
+  color: #000;
+}
+.ee {
+  background-color: #d50000;
+  color: #fff;
+}
+.it {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.left-bar {
+  width: 70%;
+}
+.right-bar {
+  width: 30%;
+}
+
+.name {
+  font-size: 3em;
+}
+.dept {
+  font-size: 1em;
+}
+.sex {
+  font-size: 1.5em;
+}
+
+.roll {
+  font-size: 2em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.homepage-back {
+  background-image: url("assets/images/collegegrounds.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homepage-welcome {
+  color: white;
+  padding: 350px 120px 30px 100px;
+  font-size: 4rem;
+
+  background-image: linear-gradient(to bottom, transparent, rgb(33, 33, 33));
+}
+
+.homepage-links {
+  width: 85%;
+  margin: 80px auto;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.homepage-link-card {
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 200px;
+  box-shadow: 0px 0px 10px black;
+  background-image: url("assets/images/students.png");
+  background-size: cover;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.homepage-card-inner {
+  background-image: linear-gradient(to bottom, transparent, black);
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.homepage-link-card:hover {
+  box-shadow: 0px 10px 10px gray;
+}
+
+.student-card {
+  color: white;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.cse-shadow {
+  box-shadow: 5px 5px 40px green;
+}
+.ece-shadow {
+  box-shadow: 5px 5px 40px yellow;
+}
+.ee-shadow {
+  box-shadow: 5px 5px 40px red;
+}
+.it-shadow {
+  box-shadow: 5px 5px 40px blue;
+}
+.student-card-inner {
+  background-color: rgb(39, 44, 52);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card-name {
+  font-size: 3rem;
+  margin: 5px 0px;
+}
+
+.card-roll,
+.card-dept,
+.card-year {
+  font-size: 2rem;
+  margin: 5px 0px;
+}
+
+.card-sex {
+  font-size: 1rem;
+  margin: 20px 0px 5px 0px;
+}
+
+.card-phone {
+  font-size: 2rem;
+  margin: 15px 0px;
+ 
+}
+
+.cse-card-phone
+{
+  color: greenyellow;
+}
+
+.ece-card-phone
+{
+  color:#ffee58;
+}
+
+.ee-card-phone
+{
+  color:#d50000;
+}
+
+.it-card-phone
+{
+  color:#03a9f4
+}
+
+
+.card-address {
+  font-size: 1.5rem;
+  margin: 15px 0px;
+}
+
+.flat-bottom
+{
+  border-radius: 20px 20px 0px 0px;
+  -webkit-border-radius: 20px 20px 0px 0px;
+  -moz-border-radius: 20px 20px 0px 0px;
+  -ms-border-radius: 20px 20px 0px 0px;
+  -o-border-radius: 20px 20px 0px 0px;
+}
+html, body { height: 100%; }
+body { margin: 0; }
+
+.mat-dialog-container
+{
+  position: relative;
+  background-color: rgb(33, 33, 33);
+}
+
+
+
+
+
+
+

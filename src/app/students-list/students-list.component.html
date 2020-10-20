@@ -1,0 +1,12 @@
+<div style="display: flex">
+    <div class="left-bar" *ngIf="searching">
+      <ng-lottie [options]="options"></ng-lottie>
+    </div>
+    <div class="left-bar" *ngIf="!searching && !_data.length" style="width: 50%; margin: auto; font-size: 3rem; color: rgb(90,90,90);">
+      No records entered yet
+    </div>
+  
+    <app-records class="left-bar" [inputData]="_data" *ngIf="_data.length" (deleteData)="deleteData($event)" (editData)="editData($event)"></app-records>
+    <app-form class="right-bar" (insertData)="updateData($event)"></app-form>
+  </div>
+  
